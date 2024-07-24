@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermagia</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+header {
+    min-height: 363px;
+    background-image: url(serum.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+/* Style the header links */
+.header a {
+  float: left;
+  color: burlywood;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 35px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #745701;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: rgb(240, 223, 201); opacity: 0.7;
+  color: #745701;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  color: #745701;
+  background-color: burlywood;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+body {
+  background-color: rgb(255, 231, 201);
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #745701;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+  
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  color: #745701;
+}
+
+.footer {
+  overflow: hidden;
+  background-color: burlywood;
+  padding: 20px 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header">
+        <img src="dermagia.svg" alt="Logo" width="60">
+        <a href="#default" class="logo">DerMagia</a>
+        <div class="header-right">
+          <a class="active" href="index.html">Página Principal </a>
+          <a href="about.html">Sobre a Clínica</a>
+          <a href="time.html">Horário de Antendimento</a>
+          <a href="contact.html">Contato</a>
+        </div>
+    </header>      
+        <div>
+          <article class="article">
+          <h2>Um pouco sobre a nossa Clínica!</h2>
+          <p>Em nossa Clínica de Dermatologia, tratamos acne, manchas, Psoríase, Eczema, Dermatite, Infecções Cutâneas entre outros com os equipamentos de alta tecnologia prontos para cuidar de você!</p>
+          <p>Já em nossa Clínica de Estética, fazemos Rejuvenescimento Facial, Preenchimentos Faciais, Toxina Botulínica (Botox), além do Tratamento de Cicactrizes e a Remoção de Manchas e Melasma com laser e peelings químicos.</p>
+          <p>A DerMagia combina tecnologia avançada com profissionais especializados para oferecer cuidados dermatológicos completos, garantindo tratamentos eficazes e personalizados para cada paciente.</p>
+        </article>
+        </div>
+        <div class="footer">
+          <footer>
+            <h2>Mais Informações</h2>
+              <p><img src="instagram.png" alt="logo do instagram"> nosso instagram: @dermagia.dermato </p>
+              <p><img src="whatsapp.png" alt="logo do whatsapp"> agende sua primeira consulta: (_ _) 9_ _ _ _-_ _ _ _</p>
+              <p><img src="email.png" alt="icon do email"> nosso email: dermagia@emailficticio.com</p>
+          </footer>
+        </div>
+</body>
+</html>
